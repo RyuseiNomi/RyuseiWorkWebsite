@@ -46,6 +46,28 @@ export const projectsData = [
   },
 ];
 
+// WORK DATA
+export const workData = [
+  {
+    id: nanoid(),
+    img: '',
+    title: '事業概要',
+    info: '石川県金沢市を拠点に、Webアプリ、モバイルアプリ等の受託開発を行っております。',
+    info2: 'LaravelやGinなどのフレームワークを用いたWebアプリの制作・保守、iOSアプリケーションの開発などをお手伝いします。',
+    url: '',
+    repo: '', // if no repo, the button will not show up
+  },
+  {
+    id: nanoid(),
+    img: '',
+    title: '過去のプロジェクト',
+    info: '',
+    info2: '',
+    url: '',
+    repo: '', // if no repo, the button will not show up
+  },
+]
+
 // CONTACT DATA
 export const contactData = {
   cta: '能美 龍星',

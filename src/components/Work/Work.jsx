@@ -5,7 +5,7 @@ import PortfolioContext from '../../context/context';
 import Title from '../Title/Title';
 
 const Work = () => {
-  const { projects } = useContext(PortfolioContext);
+  const { work } = useContext(PortfolioContext);
 
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -25,8 +25,8 @@ const Work = () => {
       <Container>
         <div className="work-wrapper">
           <Title title="Works" />
-          {projects.map((project) => {
-            const { title, info, info2, url, repo, img, id } = project;
+          {work.map((w) => {
+            const { title, info, info2, url, repo, img, id } = w;
 
             return (
               <Row key={id}>
@@ -38,7 +38,7 @@ const Work = () => {
                     distance="30px"
                   >
                     <div className="work-wrapper__text">
-                      <h3 className="work-wrapper__text-title">{title || 'Past Projects'}</h3>
+                      <h3 className="work-wrapper__text-title">{title || '過去のプロジェクト'}</h3>
                       <div>
                         <p>
                           {info ||
