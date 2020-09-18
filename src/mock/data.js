@@ -28,21 +28,21 @@ export const aboutData = {
 export const projectsData = [
   {
     id: nanoid(),
-    img: '',
-    title: '事業概要',
-    info: '石川県金沢市を拠点に、Webアプリ、モバイルアプリ等の受託開発を行っております。',
-    info2: 'LaravelやGinなどのフレームワークを用いたWebアプリの制作・保守、iOSアプリケーションの開発などをお手伝いします。',
-    url: '',
-    repo: '', // if no repo, the button will not show up
+    img: 'okure_train.png',
+    title: '遅れトレイン',
+    info: 'Ruby on Railsで作成した、全国の鉄道路線の運行情報を掲載するWebアプリ',
+    info2: '鉄道の遅延情報をAPIより取得し、その情報を変換して掲載をしている。',
+    url: 'https://train-delay-reporter.herokuapp.com/',
+    repo: 'https://github.com/RyuseiNomi/DelayReporter', // if no repo, the button will not show up
   },
   {
     id: nanoid(),
-    img: '',
-    title: '',
-    info: '',
-    info2: '',
+    img: 'delay_list_fetcher.png',
+    title: 'Delay List Fetcher',
+    info: '路線遅延情報を変換してAWS S3バケットにアップロードするLambda関数',
+    info2: '上記の遅れトレインアプリで表示している全国の路線の運行情報を作成しているAWS Lambda関数である。',
     url: '',
-    repo: '', // if no repo, the button will not show up
+    repo: 'https://github.com/RyuseiNomi/DelayListFetcher', // if no repo, the button will not show up
   },
 ];
 
