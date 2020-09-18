@@ -18,6 +18,7 @@ export const heroData = {
 // ABOUT DATA
 export const aboutData = {
   img: 'profile_icon.jpg',
+  name: 'Ryusei Nomi',
   paragraphOne: '',
   paragraphTwo: '',
   paragraphThree: '',

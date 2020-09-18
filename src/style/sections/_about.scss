@@ -58,6 +58,13 @@
           font-size: 1.6rem;
           text-align: center;
         }
+        
+        &--name {
+          text-align: left;
+          font-size: 3.0rem;
+          font-weight: bolder;
+          margin-bottom: 50px;
+        }
 
         &--important {
           background: darken($secondary-color, 1%);
