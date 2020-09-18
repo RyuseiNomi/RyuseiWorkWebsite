@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Hero from './Hero/Hero';
 import About from './About/About';
 import Projects from './Projects/Projects';
+import Work from './Work/Work';
 import Contact from './Contact/Contact';
 import Footer from './Footer/Footer';
 
@@ -29,6 +30,7 @@ function App() {
       <Hero />
       <About />
       <Projects />
+      <Work />
       <Contact />
       <Footer />
     </PortfolioProvider>
