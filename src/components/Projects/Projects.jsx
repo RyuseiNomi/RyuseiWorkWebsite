@@ -41,7 +41,7 @@ const Projects = () => {
                     distance="30px"
                   >
                     <div className="project-wrapper__text">
-                      <h3 className="project-wrapper__text-title">{title || 'Past Projects'}</h3>
+                      <h3 className="project-wrapper__text-title">{title || 'Coming soon'}</h3>
                       <div>
                         <p>
                           {info ||
@@ -101,7 +101,7 @@ const Projects = () => {
                           }}
                         >
                           <div data-tilt className="thumbnail rounded">
-                            <ProjectImg alt={title} filename={img} />
+                            <ProjectImg alt={title} filename={img || 'no-image.png'} />
                           </div>
                         </Tilt>
                       </a>

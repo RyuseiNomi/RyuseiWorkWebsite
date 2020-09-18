@@ -45,6 +45,15 @@ export const projectsData = [
     url: '',
     repo: 'https://github.com/RyuseiNomi/DelayListFetcher', // if no repo, the button will not show up
   },
+  {
+    id: nanoid(),
+    img: 'bookmark_fzf.jpg',
+    title: 'bookmark_fzf',
+    info: 'Explore starter from your bookmark via the terminal.',
+    info2: 'fzfを用いて、ターミナルからGoogle Chromeのお気に入りを選択して開くことが出来るシェルスクリプト',
+    url: '',
+    repo: 'https://github.com/RyuseiNomi/DelayListFetcher', // if no repo, the button will not show up
+  },
 ];
 
 // WORK DATA
