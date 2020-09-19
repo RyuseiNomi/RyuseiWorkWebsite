@@ -19,8 +19,8 @@ export const heroData = {
 export const aboutData = {
   img: 'profile_icon.jpg',
   name: 'Ryusei Nomi',
-  paragraphOne: '',
-  paragraphTwo: '',
+  paragraphOne: '金沢市在住エンジニア / 新卒で事業会社に入社し、Webアプリケーション(主にバックエンド)の開発に3年従事',
+  paragraphTwo: '【Keywords】 PHP / Go / Swift(SwiftUI) / API設計 / オフショア開発',
   paragraphThree: '',
   qiita: 'https://qiita.com/27ma4_ryusei',
   resume: 'https://www.resume.id/27ma4_tonto', // if no resume, the button will not show up
