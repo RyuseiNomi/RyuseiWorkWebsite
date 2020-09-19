@@ -70,7 +70,7 @@ export const workData = [
   {
     id: nanoid(),
     img: '',
-    title: '過去のプロジェクト',
+    title: '過去のお仕事',
     info: '',
     info2: '',
     url: '',

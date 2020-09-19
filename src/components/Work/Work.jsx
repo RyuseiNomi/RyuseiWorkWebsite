@@ -38,7 +38,7 @@ const Work = () => {
                     distance="30px"
                   >
                     <div className="work-wrapper__text">
-                      <h3 className="work-wrapper__text-title">{title || '過去のプロジェクト'}</h3>
+                      <h3 className="work-wrapper__text-title">{title || '過去のお仕事'}</h3>
                       <div>
                         <p>
                           {info ||
