@@ -22,6 +22,7 @@ export const aboutData = {
   paragraphOne: '',
   paragraphTwo: '',
   paragraphThree: '',
+  qiita: 'https://qiita.com/27ma4_ryusei',
   resume: 'https://www.resume.id/27ma4_tonto', // if no resume, the button will not show up
 };
 
@@ -70,7 +71,7 @@ export const workData = [
   {
     id: nanoid(),
     img: '',
-    title: '過去のプロジェクト',
+    title: '過去のお仕事',
     info: '',
     info2: '',
     url: '',
@@ -103,5 +104,5 @@ export const footerData = {
 
 // Github start/fork buttons
 export const githubButtons = {
-  isEnabled: true, // set to false to disable the GitHub stars/fork buttons
+  isEnabled: false, // set to false to disable the GitHub stars/fork buttons
 };
