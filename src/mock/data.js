@@ -22,6 +22,7 @@ export const aboutData = {
   paragraphOne: '',
   paragraphTwo: '',
   paragraphThree: '',
+  qiita: 'https://qiita.com/27ma4_ryusei',
   resume: 'https://www.resume.id/27ma4_tonto', // if no resume, the button will not show up
 };
 

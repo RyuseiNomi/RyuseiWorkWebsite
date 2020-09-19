@@ -7,7 +7,7 @@ import PortfolioContext from '../../context/context';
 
 const About = () => {
   const { about } = useContext(PortfolioContext);
-  const { img, name, paragraphOne, paragraphTwo, paragraphThree, resume } = about;
+  const { img, name, paragraphOne, paragraphTwo, paragraphThree, qiita, resume } = about;
 
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -49,8 +49,20 @@ const About = () => {
                     'Keywords : PHP / Go / Swift(SwiftUI) / API設計 / オフショア開発'}
                 </p>
                 <p className="about-wrapper__info-text">
-                  {paragraphThree || 'Qiita : https://qiita.com/27ma4_ryusei'}
+                  {paragraphThree || ''}
                 </p>
+                {qiita && (
+                  <span className="d-flex mt-3">
+                    <a
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="cta-btn cta-btn--resume"
+                      href={resume}
+                    >
+                      Qiita
+                    </a>
+                  </span>
+                )}
                 {resume && (
                   <span className="d-flex mt-3">
                     <a
