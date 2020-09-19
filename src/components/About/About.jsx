@@ -42,11 +42,11 @@ const About = () => {
                 </p>
                 <p className="about-wrapper__info-text">
                   {paragraphOne ||
-                    '金沢市在住エンジニア / 新卒で事業会社に入社し、Webアプリケーション(主にバックエンド)の開発に3年従事'}
+                    'No Description'}
                 </p>
                 <p className="about-wrapper__info-text">
                   {paragraphTwo ||
-                    'Keywords : PHP / Go / Swift(SwiftUI) / API設計 / オフショア開発'}
+                    ''}
                 </p>
                 <p className="about-wrapper__info-text">
                   {paragraphThree || ''}
@@ -57,7 +57,7 @@ const About = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="cta-btn cta-btn--resume"
-                      href={resume}
+                      href={qiita}
                     >
                       Qiita
                     </a>
