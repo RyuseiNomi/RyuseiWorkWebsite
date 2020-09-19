@@ -18,6 +18,7 @@ export const heroData = {
 // ABOUT DATA
 export const aboutData = {
   img: 'profile_icon.jpg',
+  name: 'Ryusei Nomi',
   paragraphOne: '',
   paragraphTwo: '',
   paragraphThree: '',
@@ -26,6 +27,37 @@ export const aboutData = {
 
 // PROJECTS DATA
 export const projectsData = [
+  {
+    id: nanoid(),
+    img: 'okure_train.png',
+    title: '遅れトレイン',
+    info: 'Ruby on Railsで作成した、全国の鉄道路線の運行情報を掲載するWebアプリ',
+    info2: '鉄道の遅延情報をAPIより取得し、その情報を変換して掲載をしている。',
+    url: 'https://train-delay-reporter.herokuapp.com/',
+    repo: 'https://github.com/RyuseiNomi/DelayReporter', // if no repo, the button will not show up
+  },
+  {
+    id: nanoid(),
+    img: 'delay_list_fetcher.png',
+    title: 'Delay List Fetcher',
+    info: '路線遅延情報を変換してAWS S3バケットにアップロードするLambda関数',
+    info2: '上記の遅れトレインアプリで表示している全国の路線の運行情報を作成しているAWS Lambda関数である。',
+    url: '',
+    repo: 'https://github.com/RyuseiNomi/DelayListFetcher', // if no repo, the button will not show up
+  },
+  {
+    id: nanoid(),
+    img: 'bookmark_fzf.jpg',
+    title: 'bookmark_fzf',
+    info: 'Explore starter from your bookmark via the terminal.',
+    info2: 'fzfを用いて、ターミナルからGoogle Chromeのお気に入りを選択して開くことが出来るシェルスクリプト',
+    url: '',
+    repo: 'https://github.com/RyuseiNomi/DelayListFetcher', // if no repo, the button will not show up
+  },
+];
+
+// WORK DATA
+export const workData = [
   {
     id: nanoid(),
     img: '',
@@ -38,13 +70,13 @@ export const projectsData = [
   {
     id: nanoid(),
     img: '',
-    title: '',
+    title: '過去のプロジェクト',
     info: '',
     info2: '',
     url: '',
     repo: '', // if no repo, the button will not show up
   },
-];
+]
 
 // CONTACT DATA
 export const contactData = {

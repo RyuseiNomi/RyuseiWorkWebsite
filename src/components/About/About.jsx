@@ -7,7 +7,7 @@ import PortfolioContext from '../../context/context';
 
 const About = () => {
   const { about } = useContext(PortfolioContext);
-  const { img, paragraphOne, paragraphTwo, paragraphThree, resume } = about;
+  const { img, name, paragraphOne, paragraphTwo, paragraphThree, resume } = about;
 
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -37,6 +37,9 @@ const About = () => {
           <Col md={6} sm={12}>
             <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
               <div className="about-wrapper__info">
+                <p className="about-wrapper__info-text--name">
+                  {name || 'Ryusei Nomi'}
+                </p>
                 <p className="about-wrapper__info-text">
                   {paragraphOne ||
                     '金沢市在住エンジニア / 新卒で事業会社に入社し、Webアプリケーション(主にバックエンド)の開発に3年従事'}
