@@ -30,6 +30,15 @@ export const aboutData = {
 export const projectsData = [
   {
     id: nanoid(),
+    img: 'makasete_choice.png',
+    title: 'まかせてチョイス',
+    info: '友達と遊んでいる時、グループワークを始めたい時、ゲームを始める時、授業で演習を始める時など、グループ分けが必要なシチュエーションが多くあります。そんな時、ランダムでグループを振り分けてくれるのが「まかせてチョイス」です。メンバーとグループ数を入力するだけで簡単にグループ分けをすることが出来ます。',
+    info2: '',
+    url: 'https://apps.apple.com/us/app/%E3%81%BE%E3%81%8B%E3%81%9B%E3%81%A6%E3%83%81%E3%83%A7%E3%82%A4%E3%82%B9/id1513168700',
+    repo: 'https://github.com/RyuseiNomi/MakaseteChoice_iOS',
+  },
+  {
+    id: nanoid(),
     img: 'okure_train.png',
     title: '遅れトレイン',
     info: 'Ruby on Railsで作成した、全国の鉄道路線の運行情報を掲載するWebアプリ',
@@ -45,15 +54,6 @@ export const projectsData = [
     info2: '上記の遅れトレインアプリで表示している全国の路線の運行情報を作成しているAWS Lambda関数である。',
     url: '',
     repo: 'https://github.com/RyuseiNomi/DelayListFetcher',
-  },
-  {
-    id: nanoid(),
-    img: 'makasete_choice.png',
-    title: 'まかせてチョイス',
-    info: '友達と遊んでいる時、グループワークを始めたい時、ゲームを始める時、授業で演習を始める時など、グループ分けが必要なシチュエーションが多くあります。そんな時、ランダムでグループを振り分けてくれるのが「まかせてチョイス」です。メンバーとグループ数を入力するだけで簡単にグループ分けをすることが出来ます。',
-    info2: '',
-    url: 'https://apps.apple.com/us/app/%E3%81%BE%E3%81%8B%E3%81%9B%E3%81%A6%E3%83%81%E3%83%A7%E3%82%A4%E3%82%B9/id1513168700',
-    repo: 'https://github.com/RyuseiNomi/MakaseteChoice_iOS',
   },
   {
     id: nanoid(),
