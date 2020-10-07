@@ -4,6 +4,8 @@ import { Container, Row, Col } from 'react-bootstrap';
 import { makeStyles } from '@material-ui/core/styles'
 import Chip from '@material-ui/core/Chip';
 import ComputerIcon from '@material-ui/icons/Computer';
+import TwitterIcon from '@material-ui/icons/Twitter';
+import GitHubIcon from '@material-ui/icons/GitHub';
 import Title from '../Title/Title';
 import AboutImg from '../Image/AboutImg';
 import PortfolioContext from '../../context/context';
@@ -65,6 +67,14 @@ const About = () => {
                 <p className="about-wrapper__info-text--subTitle">
                   {subTitle || 'Non subtitle'}
                 </p>
+                <div className="social-links">
+                  <a href="https://twitter.com/skn_ton10_v1">
+                    <TwitterIcon style={{ fontSize: 40 }} />
+                  </a>
+                  <a href="https://github.com/RyuseiNomi">
+                    <GitHubIcon style={{ fontSize: 40 }} />
+                  </a>
+                </div>
                 <p className="about-wrapper__info-text">
                   {paragraphOne ||
                     'No Description'}
