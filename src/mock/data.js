@@ -19,12 +19,52 @@ export const heroData = {
 export const aboutData = {
   img: 'profile_icon.jpg',
   name: 'Ryusei Nomi',
-  paragraphOne: '金沢市在住エンジニア / 新卒で事業会社に入社し、Webアプリケーション(主にバックエンド)の開発に3年従事',
-  paragraphTwo: '【Keywords】 PHP / Go / Swift(SwiftUI) / API設計 / オフショア開発',
+  subTitle: 'An engineer at Kanazawa',
+  paragraphOne: '新卒で事業会社に入社し、Webアプリケーション(主にバックエンド)の開発に3年従事',
+  paragraphTwo: '',
   paragraphThree: '',
   qiita: 'https://qiita.com/27ma4_ryusei',
   resume: 'https://www.resume.id/27ma4_tonto', // if no resume, the button will not show up
 };
+
+// Keywords DATA
+export const keywordsData = [
+    {
+      id: nanoid(),
+      name: 'PHP',
+      isHobby: false,
+    },
+    {
+      id: nanoid(),
+      name: 'Go',
+      isHobby: false,
+    },
+    {
+      id: nanoid(),
+      name: 'Swift',
+      isHobby: false,
+    },
+    {
+      id: nanoid(),
+      name: '🚗ドライブ',
+      isHobby: true,
+    },
+    {
+      id: nanoid(),
+      name: '☕️コーヒー',
+      isHobby: true,
+    },
+    {
+      id: nanoid(),
+      name: '🎮音ゲー',
+      isHobby: true,
+    },
+    {
+      id: nanoid(),
+      name: '📷カメラ',
+      isHobby: true,
+    },
+];
 
 // PROJECTS DATA
 export const projectsData = [
@@ -90,8 +130,6 @@ export const workData = [
 
 // CONTACT DATA
 export const contactData = {
-  cta: '能美 龍星',
-  btn: '',
   email: 'ryusakine0507@gmail.com',
 };
 
