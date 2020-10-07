@@ -90,8 +90,6 @@ export const workData = [
 
 // CONTACT DATA
 export const contactData = {
-  cta: '能美 龍星',
-  btn: '',
   email: 'ryusakine0507@gmail.com',
 };
 
