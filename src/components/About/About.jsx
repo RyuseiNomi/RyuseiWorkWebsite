@@ -6,6 +6,7 @@ import Chip from '@material-ui/core/Chip';
 import ComputerIcon from '@material-ui/icons/Computer';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import GitHubIcon from '@material-ui/icons/GitHub';
+import QiitaIcon from '../../images/favicon.png';
 import Title from '../Title/Title';
 import AboutImg from '../Image/AboutImg';
 import PortfolioContext from '../../context/context';
@@ -74,6 +75,9 @@ const About = () => {
                   <a href="https://github.com/RyuseiNomi">
                     <GitHubIcon style={{ fontSize: 40 }} />
                   </a>
+                  <a href="https://qiita.com/27ma4_ryusei">
+                    <img src={QiitaIcon} alt="Logo" width="40" height="40" />
+                  </a>
                 </div>
                 <p className="about-wrapper__info-text">
                   {paragraphOne ||
@@ -92,18 +96,6 @@ const About = () => {
                     );
                   })}
                 </div>
-                {qiita && (
-                  <span className="d-flex mt-3">
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="cta-btn cta-btn--resume"
-                      href={qiita}
-                    >
-                      Qiita
-                    </a>
-                  </span>
-                )}
                 {resume && (
                   <span className="d-flex mt-3">
                     <a
