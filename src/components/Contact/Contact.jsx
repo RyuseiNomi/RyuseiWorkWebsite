@@ -17,14 +17,6 @@ const Contact = () => {
         <Title title="Contact" />
         <Fade bottom duration={1000} delay={800} distance="30px">
           <div className="contact-wrapper">
-            <div className="social-links">
-              <a href="https://twitter.com/skn_ton10_v1">
-                <TwitterIcon style={{ fontSize: 40 }} />
-              </a>
-              <a href="https://github.com/RyuseiNomi">
-                <GitHubIcon style={{ fontSize: 40 }} />
-              </a>
-            </div>
             <p className="contact-wrapper__text">
               <MailIcon style={{ fontSize: 32 }} />
               {email || 'Unknown'}
