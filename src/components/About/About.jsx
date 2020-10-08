@@ -83,6 +83,14 @@ const About = () => {
                   {paragraphOne ||
                     'No Description'}
                 </p>
+                <p className="about-wrapper__info-text">
+                  {paragraphTwo ||
+                    'No Description'}
+                </p>
+                <p className="about-wrapper__info-text">
+                  {paragraphThree ||
+                    'No Description'}
+                </p>
                 <div className={keywordChipStyle.root}>
                   {keywords.map((keyword) => {
                     const { name, isHobby } = keyword;
