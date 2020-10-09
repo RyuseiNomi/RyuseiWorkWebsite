@@ -14,7 +14,7 @@ import PortfolioContext from '../../context/context';
 const About = () => {
   const { about } = useContext(PortfolioContext);
   const { keywords } = useContext(PortfolioContext);
-  const { img, name, subTitle, paragraphOne, paragraphTwo, paragraphThree, qiita, resume } = about;
+  const { img, name, subTitle, paragraphOne, paragraphTwo, paragraphThree, twitter, github, qiita, resume } = about;
 
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -69,13 +69,13 @@ const About = () => {
                   {subTitle || 'Non subtitle'}
                 </p>
                 <div className="social-links">
-                  <a href="https://twitter.com/skn_ton10_v1">
+                  <a href={twitter}>
                     <TwitterIcon style={{ fontSize: 40 }} />
                   </a>
-                  <a href="https://github.com/RyuseiNomi">
+                  <a href={github}>
                     <GitHubIcon style={{ fontSize: 40 }} />
                   </a>
-                  <a href="https://qiita.com/27ma4_ryusei">
+                  <a href={qiita}>
                     <img src={QiitaIcon} alt="Logo" width="40" height="40" />
                   </a>
                 </div>

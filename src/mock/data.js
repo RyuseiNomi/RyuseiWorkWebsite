@@ -23,6 +23,8 @@ export const aboutData = {
   paragraphOne: '金沢市でエンジニアをやっております。主にWebアプリのバックエンドやモバイルアプリを触っています。',
   paragraphTwo: '新卒で事業会社に入社し、3年弱ほど少人数チームでQAやAPI設計実装を行っていました。',
   paragraphThree: '2020年9月からは個人事業主として仕事を受けています。',
+  twitter: 'https://twitter.com/skn_ton10_v1',
+  github: 'https://github.com/RyuseiNomi',
   qiita: 'https://qiita.com/27ma4_ryusei',
   resume: 'https://www.resume.id/27ma4_tonto', // if no resume, the button will not show up
 };
