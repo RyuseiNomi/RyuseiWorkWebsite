@@ -17,7 +17,7 @@ export const heroData = {
 
 // ABOUT DATA
 export const aboutData = {
-  img: 'profile_icon.jpg',
+  img: 'profile_picture.jpg',
   name: 'Ryusei Nomi',
   subTitle: 'An engineer at Kanazawa',
   paragraphOne: '金沢市でエンジニアをやっております。主にWebアプリのバックエンドやモバイルアプリを触っています。',
