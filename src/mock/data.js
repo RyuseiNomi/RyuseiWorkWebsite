@@ -21,7 +21,7 @@ export const aboutData = {
   name: 'Ryusei Nomi',
   subTitle: 'An engineer at Kanazawa',
   paragraphOne: '金沢市でエンジニアをやっております。主にWebアプリのバックエンドやモバイルアプリを触っています。',
-  paragraphTwo: '新卒じ事業会社に入社し、3年弱ほど少人数チームでQAやAPI設計実装を行っていました。',
+  paragraphTwo: '新卒で事業会社に入社し、3年弱ほど少人数チームでQAやAPI設計実装を行っていました。',
   paragraphThree: '2020年9月からは個人事業主として仕事を受けています。',
   qiita: 'https://qiita.com/27ma4_ryusei',
   resume: 'https://www.resume.id/27ma4_tonto', // if no resume, the button will not show up
