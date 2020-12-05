@@ -48,23 +48,33 @@ const Work = () => {
             </Fade>
           </Row>
           <div className="work-wrapper__text">
-            <h3 className="work-wrapper__text-title">過去のお仕事</h3>
-          </div>
-          {work.map((w) => {
-            const { title, info, info2, url, repo, img, id } = w;
+            <h3 className="work-wrapper__text-title">
+              <Fade
+                left={isDesktop}
+                bottom={isMobile}
+                duration={1000}
+                delay={500}
+                distance="30px"
+              >
+              過去のお仕事
+              </Fade>
+            </h3>
+            {work.map((w) => {
+              const { title, info, info2, url, repo, img, id } = w;
 
-            return (
-              <ProjectDetail
-                title={title}
-                info={info}
-                info2={info2}
-                url={url}
-                repo={repo}
-                img={img}
-                id={id}
-              />
-            );
-          })}
+              return (
+                <ProjectDetail
+                  title={title}
+                  info={info}
+                  info2={info2}
+                  url={url}
+                  repo={repo}
+                  img={img}
+                  id={id}
+                />
+              );
+            })}
+          </div>
         </div>
       </Container>
     </section>
