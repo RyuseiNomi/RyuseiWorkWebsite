@@ -18,6 +18,16 @@ const ProjectDetail: React.FC<Props> = (props) => {
   const { title, info, info2, url, repo, img, id } = props;
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
+  useEffect(() => {
+    if (window.innerWidth > 769) {
+      setIsDesktop(true);
+      setIsMobile(false);
+    } else {
+      setIsMobile(true);
+      setIsDesktop(false);
+    }
+  }, []);
+
 
   return (
     <Row key={id}>
