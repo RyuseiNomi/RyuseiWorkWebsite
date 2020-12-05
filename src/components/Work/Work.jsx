@@ -3,6 +3,7 @@ import Fade from 'react-reveal/Fade';
 import { Container, Row, Col } from 'react-bootstrap';
 import PortfolioContext from '../../context/context';
 import Title from '../Title/Title';
+import ProjectDetail from '../ProjectDetail';
 
 const Work = () => {
   const { work } = useContext(PortfolioContext);
@@ -25,40 +26,43 @@ const Work = () => {
       <Container>
         <div className="work-wrapper">
           <Title title="Works" />
+          <Row>
+            <Fade
+              left={isDesktop}
+              bottom={isMobile}
+              duration={1000}
+              delay={500}
+              distance="30px"
+            >
+              <div className="work-wrapper__text">
+                <h3 className="work-wrapper__text-title">事業概要</h3>
+                <div>
+                  <p>
+                    石川県金沢市を拠点に、Webアプリ、モバイルアプリ等の受託開発を行っております。
+                  </p>
+                  <p className="mb-4">
+                    LaravelやGinなどのフレームワークを用いたWebアプリの制作・保守、iOSアプリケーションの開発などをお手伝いします。
+                  </p>
+                </div>
+              </div>
+            </Fade>
+          </Row>
+          <div className="work-wrapper__text">
+            <h3 className="work-wrapper__text-title">過去のお仕事</h3>
+          </div>
           {work.map((w) => {
             const { title, info, info2, url, repo, img, id } = w;
 
             return (
-              <Row key={id}>
-                  <Fade
-                    left={isDesktop}
-                    bottom={isMobile}
-                    duration={1000}
-                    delay={500}
-                    distance="30px"
-                  >
-                    <div className="work-wrapper__text">
-                      <h3 className="work-wrapper__text-title">{title || '過去のお仕事'}</h3>
-                      <div>
-                        <p>
-                          {info ||
-                            'This section will come soon'}
-                        </p>
-                        <p className="mb-4">{info2 || ''}</p>
-                      </div>
-                      {repo && (
-                        <a
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="cta-btn text-color-main"
-                          href={repo}
-                        >
-                          Source Code
-                        </a>
-                      )}
-                    </div>
-                  </Fade>
-              </Row>
+              <ProjectDetail
+                title={title}
+                info={info}
+                info2={info2}
+                url={url}
+                repo={repo}
+                img={img}
+                id={id}
+              />
             );
           })}
         </div>
