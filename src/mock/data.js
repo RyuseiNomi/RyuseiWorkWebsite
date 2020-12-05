@@ -112,20 +112,11 @@ export const projectsData = [
 export const workData = [
   {
     id: nanoid(),
-    img: '',
-    title: '事業概要',
-    info: '石川県金沢市を拠点に、Webアプリ、モバイルアプリ等の受託開発を行っております。',
-    info2: 'LaravelやGinなどのフレームワークを用いたWebアプリの制作・保守、iOSアプリケーションの開発などをお手伝いします。',
-    url: '',
-    repo: '', // if no repo, the button will not show up
-  },
-  {
-    id: nanoid(),
-    img: '',
-    title: '過去のお仕事',
-    info: '',
-    info2: '',
-    url: '',
+    img: 'hokurikucar.png',
+    title: '【北陸くるま情報サイト運用支援】',
+    info: 'suncat氏が運営する、北陸のドライブスポットや車に関するお役立ち情報を発信するWebサイトの運用をお手伝いしています。',
+    info2: '主にSNSを通した広報活動の自動化を担当しています。',
+    url: 'https://hokurikucar.com/',
     repo: '', // if no repo, the button will not show up
   },
 ]
