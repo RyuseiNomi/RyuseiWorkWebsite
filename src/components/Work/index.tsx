@@ -51,10 +51,10 @@ const Work: React.FC<Props> = (props) => {
                 <h3 className="work-wrapper__text-title">事業概要</h3>
                 <div>
                   <p>
-                    石川県金沢市を拠点に、Webアプリ、モバイルアプリ等の受託開発を行っております。
+                    石川県金沢市を拠点に、Webアプリ、モバイルアプリ等の開発を行っております。
                   </p>
                   <p className="mb-4">
-                    LaravelやGinなどのフレームワークを用いたWebアプリの制作・保守、iOSアプリケーションの開発などをお手伝いします。
+                    ReactやGinなどを用いたWebアプリの制作、iOSアプリケーションの開発などをお手伝いします。
                   </p>
                 </div>
               </div>
