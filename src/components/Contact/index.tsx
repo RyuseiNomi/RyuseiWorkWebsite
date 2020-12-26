@@ -1,13 +1,19 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import Fade from 'react-reveal/Fade';
 import { Container } from 'react-bootstrap';
 import MailIcon from '@material-ui/icons/Mail';
-import PortfolioContext from '../../context/context';
 import Title from '../Title';
 
-const Contact: React.FC = () => {
-  const { contact } = useContext(PortfolioContext);
-  const { email } = contact;
+type Contact = {
+  email: string;
+}
+
+type Props = {
+  contact: Contact;
+}
+
+const Contact: React.FC<Props> = (props) => {
+  const { contact } = props;
 
   return (
     <section id="contact">
@@ -17,7 +23,7 @@ const Contact: React.FC = () => {
           <div className="contact-wrapper">
             <p className="contact-wrapper__text">
               <MailIcon style={{ fontSize: 32 }} />
-              {email || 'Unknown'}
+              {contact.email || 'Unknown'}
             </p>
           </div>
         </Fade>

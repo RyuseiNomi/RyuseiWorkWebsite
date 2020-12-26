@@ -1,11 +1,20 @@
-import React, { useContext, useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Container } from 'react-bootstrap';
 import Fade from 'react-reveal/Fade';
-import { Link } from 'react-scroll';
-import PortfolioContext from '../../context/context';
 
-const Top: React.FC = () => {
-  const { top } = useContext(PortfolioContext);
+type Top = {
+  title: string;
+  name: string;
+  subtitle: string;
+  cta: string;
+}
+
+type Props = {
+  top: Top;
+}
+
+const Top: React.FC<Props> = (props) => {
+  const { top } = props;
   const { title, name, subtitle, cta } = top;
 
   const [isDesktop, setIsDesktop] = useState(false);

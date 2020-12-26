@@ -2,6 +2,14 @@ import React, { useContext } from 'react';
 import { Container } from 'react-bootstrap';
 import { Link } from 'react-scroll';
 
+type Footer = {
+  networks: {
+    id: string;
+    name: string;
+    url: string;
+  }[];
+}
+
 const Footer: React.FC = () => {
 
   return (

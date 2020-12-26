@@ -1,4 +1,4 @@
-import React, { useContext, useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import Fade from 'react-reveal/Fade';
 import { Container, Row, Col } from 'react-bootstrap';
 import { makeStyles } from '@material-ui/core/styles'
@@ -9,11 +9,33 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 import QiitaIcon from '../../images/favicon.png';
 import Title from '../Title';
 import AboutImg from '../Image/AboutImg';
-import PortfolioContext from '../../context/context';
 
-const About: React.FC = () => {
-  const { about } = useContext(PortfolioContext);
-  const { keywords } = useContext(PortfolioContext);
+type About = {
+  img: string;
+  name: string;
+  subTitle: string;
+  paragraphOne: string;
+  paragraphTwo: string;
+  paragraphThree: string;
+  twitter: string;
+  github: string;
+  qiita: string;
+  resume: string;
+}
+
+type Keyword = {
+  id: string;
+  name: string;
+  isHobby: boolean;
+}
+
+type Props = {
+  about: About;
+  keywords: Keyword[];
+}
+
+const About: React.FC<Props> = (props) => {
+  const { about, keywords } = props;
   const { img, name, subTitle, paragraphOne, paragraphTwo, paragraphThree, twitter, github, qiita, resume } = about;
 
   const [isDesktop, setIsDesktop] = useState(false);

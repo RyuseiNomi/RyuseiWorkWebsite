@@ -1,12 +1,25 @@
-import React, { useContext, useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Fade from 'react-reveal/Fade';
 import { Container, Row } from 'react-bootstrap';
-import PortfolioContext from '../../context/context';
 import Title from '../Title';
 import ProjectDetail from '../ProjectDetail';
 
-const Work: React.FC = () => {
-  const { work } = useContext(PortfolioContext);
+type Work = {
+  id: string;
+  img: string;
+  title: string;
+  info: string;
+  info2: string;
+  url: string;
+  repo: string;
+};
+
+type Props = {
+  works: Work[];
+}
+
+const Work: React.FC<Props> = (props) => {
+  const { works } = props;
 
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -59,7 +72,7 @@ const Work: React.FC = () => {
               過去のお仕事
               </Fade>
             </h3>
-            {work.map((w) => {
+            {works.map((w) => {
               const { title, info, info2, url, repo, img, id } = w;
 
               return (
