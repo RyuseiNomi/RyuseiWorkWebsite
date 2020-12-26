@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { Container } from 'react-bootstrap';
 import PortfolioContext from '../../context/context';
-import Title from '../Title/Title';
+import Title from '../Title';
 import ProjectDetail from '../ProjectDetail';
 
 const Projects: React.FC = () => {

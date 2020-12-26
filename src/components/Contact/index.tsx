@@ -3,7 +3,7 @@ import Fade from 'react-reveal/Fade';
 import { Container } from 'react-bootstrap';
 import MailIcon from '@material-ui/icons/Mail';
 import PortfolioContext from '../../context/context';
-import Title from '../Title/Title';
+import Title from '../Title';
 
 const Contact: React.FC = () => {
   const { contact } = useContext(PortfolioContext);

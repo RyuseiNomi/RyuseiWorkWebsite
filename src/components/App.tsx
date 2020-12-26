@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import Top from './Top/Top';
-import About from './About/About';
-import Projects from './Projects/Projects';
-import Work from './Work/Work';
-import Contact from './Contact/Contact';
-import Footer from './Footer/Footer';
+import Top from './Top';
+import About from './About';
+import Projects from './Projects';
+import Work from './Work';
+import Contact from './Contact';
+import Footer from './Footer';
 
 import { PortfolioProvider } from '../context/context';
 

@@ -7,7 +7,7 @@ import ComputerIcon from '@material-ui/icons/Computer';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import QiitaIcon from '../../images/favicon.png';
-import Title from '../Title/Title';
+import Title from '../Title';
 import AboutImg from '../Image/AboutImg';
 import PortfolioContext from '../../context/context';
 
