@@ -6,8 +6,7 @@ import GithubButtons from '../GithubButtons/GithubButtons';
 
 import { githubButtons } from '../../mock/data';
 
-const Footer = () => {
-  const { footer } = useContext(PortfolioContext);
+const Footer: React.FC = () => {
   const { isEnabled } = githubButtons;
 
   return (
