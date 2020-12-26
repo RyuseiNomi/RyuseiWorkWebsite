@@ -5,8 +5,8 @@ import { Link } from 'react-scroll';
 import PortfolioContext from '../../context/context';
 
 const Top: React.FC = () => {
-  const { hero } = useContext(PortfolioContext);
-  const { title, name, subtitle, cta } = hero;
+  const { top } = useContext(PortfolioContext);
+  const { title, name, subtitle, cta } = top;
 
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
