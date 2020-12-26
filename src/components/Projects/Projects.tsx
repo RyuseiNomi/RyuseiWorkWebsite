@@ -4,7 +4,7 @@ import PortfolioContext from '../../context/context';
 import Title from '../Title/Title';
 import ProjectDetail from '../ProjectDetail';
 
-const Projects = () => {
+const Projects: React.FC = () => {
   const { projects } = useContext(PortfolioContext);
 
   return (

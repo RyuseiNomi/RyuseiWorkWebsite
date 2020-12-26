@@ -5,7 +5,7 @@ import PortfolioContext from '../../context/context';
 import Title from '../Title/Title';
 import ProjectDetail from '../ProjectDetail';
 
-const Work = () => {
+const Work: React.FC = () => {
   const { work } = useContext(PortfolioContext);
 
   const [isDesktop, setIsDesktop] = useState(false);
