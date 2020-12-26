@@ -11,7 +11,7 @@ import Title from '../Title/Title';
 import AboutImg from '../Image/AboutImg';
 import PortfolioContext from '../../context/context';
 
-const About = () => {
+const About: React.FC = () => {
   const { about } = useContext(PortfolioContext);
   const { keywords } = useContext(PortfolioContext);
   const { img, name, subTitle, paragraphOne, paragraphTwo, paragraphThree, twitter, github, qiita, resume } = about;
