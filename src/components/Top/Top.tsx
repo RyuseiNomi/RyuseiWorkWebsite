@@ -4,7 +4,7 @@ import Fade from 'react-reveal/Fade';
 import { Link } from 'react-scroll';
 import PortfolioContext from '../../context/context';
 
-const Header = () => {
+const Top: React.FC = () => {
   const { hero } = useContext(PortfolioContext);
   const { title, name, subtitle, cta } = hero;
 
@@ -44,4 +44,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default Top;
