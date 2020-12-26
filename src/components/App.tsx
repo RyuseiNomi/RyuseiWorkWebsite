@@ -6,7 +6,15 @@ import Work from './Work';
 import Contact from './Contact';
 import Footer from './Footer';
 
-import { topData, aboutData, keywordsData, projectsData, workData, contactData, footerData } from '../mock/data';
+import {
+  topData,
+  aboutData,
+  keywordsData,
+  projectsData,
+  workData,
+  contactData,
+  footerData
+} from '../data/data';
 
 const App: React.FC = () => {
   return (
