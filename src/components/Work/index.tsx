@@ -1,12 +1,25 @@
-import React, { useContext, useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Fade from 'react-reveal/Fade';
 import { Container, Row } from 'react-bootstrap';
-import PortfolioContext from '../../context/context';
-import Title from '../Title/Title';
+import Title from '../Title';
 import ProjectDetail from '../ProjectDetail';
 
-const Work = () => {
-  const { work } = useContext(PortfolioContext);
+type Work = {
+  id: string;
+  img: string;
+  title: string;
+  info: string;
+  info2: string;
+  url: string;
+  repo: string;
+};
+
+type Props = {
+  works: Work[];
+}
+
+const Work: React.FC<Props> = (props) => {
+  const { works } = props;
 
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -38,10 +51,10 @@ const Work = () => {
                 <h3 className="work-wrapper__text-title">事業概要</h3>
                 <div>
                   <p>
-                    石川県金沢市を拠点に、Webアプリ、モバイルアプリ等の受託開発を行っております。
+                    石川県金沢市を拠点に、Webアプリ、モバイルアプリ等の開発を行っております。
                   </p>
                   <p className="mb-4">
-                    LaravelやGinなどのフレームワークを用いたWebアプリの制作・保守、iOSアプリケーションの開発などをお手伝いします。
+                    ReactやGinなどを用いたWebアプリの制作、iOSアプリケーションの開発などをお手伝いします。
                   </p>
                 </div>
               </div>
@@ -59,7 +72,7 @@ const Work = () => {
               過去のお仕事
               </Fade>
             </h3>
-            {work.map((w) => {
+            {works.map((w) => {
               const { title, info, info2, url, repo, img, id } = w;
 
               return (

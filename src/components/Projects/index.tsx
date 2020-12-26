@@ -1,11 +1,24 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import { Container } from 'react-bootstrap';
-import PortfolioContext from '../../context/context';
-import Title from '../Title/Title';
+import Title from '../Title';
 import ProjectDetail from '../ProjectDetail';
 
-const Projects = () => {
-  const { projects } = useContext(PortfolioContext);
+type Project = {
+  id: string;
+  img: string;
+  title: string;
+  info: string;
+  info2: string;
+  url: string;
+  repo: string;
+}
+
+type Props = {
+  projects: Project[];
+}
+
+const Projects: React.FC<Props> = (props) => {
+  const { projects } = props;
 
   return (
     <section id="projects">
@@ -13,7 +26,7 @@ const Projects = () => {
         <div className="project-wrapper">
           <Title title="Output" />
           {projects.map((project) => {
-            const { title, info, info2, url, repo, img, id } = project;
+            const { id, img, title, info, info2, url, repo } = project;
             return (
               <ProjectDetail
                 title={title}

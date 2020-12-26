@@ -7,8 +7,8 @@ export const headData = {
   description: 'RyuseiのWork Website', // e.g: Welcome to my website
 };
 
-// HERO DATA
-export const heroData = {
+// TOP DATA
+export const topData = {
   title: '',
   name: '',
   subtitle: '',
